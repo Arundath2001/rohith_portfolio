@@ -1,0 +1,352 @@
+
+*{
+    margin: 0px;
+}
+
+#root{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    padding: 20px;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    width: 997px;
+    top: 27px;
+    border-radius: 12px;
+    background-color: #212121;
+    padding: 20px;
+    margin: 0 auto;
+
+    
+}
+
+
+#top{
+    padding: 0px, 12px, 0px, 0px    ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#topimg{
+    width: 106px;
+    height: 106px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#workcard{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+#workcard:hover{
+    background-color: rgb(58, 58, 58);
+    border-radius: 12px;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+#parasmall{
+    font-size: 15px;
+}
+
+.srvhead{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.workcard_right{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#buttonnormal{
+    padding: 10px;
+    background-color: #414040;
+    border-radius: 12px;
+    font-size: 16px;
+    border: 0px;
+    color: #FFFFFF;
+}
+
+.workcard_right_down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.workcard_right_down , .workcard_right_down{
+    flex: 1;
+}
+
+.workdata{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.serivcecard{
+    border: 1px solid #C7C5C5;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #414040;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.servicedata{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about, .about_data{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.buttonicon{
+    background-color: #414040;
+    padding: 10px;
+    border-radius: 12px;
+    height: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_button{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact_top{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact_details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttonicon:hover{
+    background-color: rgb(114, 114, 114);
+}
+
+#buttonnormal:hover{
+    background-color: rgb(114, 114, 114);
+    padding: 11px;
+}
+
+.navbar_line{
+    border: 1px solid #C7C5C5;
+}
+
+.navbar{
+    background-color: #212121;
+    border-radius: 12px 0px 0px 12px;
+    padding: 10px;
+    position: fixed;
+    top: 40%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact_para{
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.navbar_top , .contactnew{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 6px;
+}
+
+.contactnew , .contact_details{
+    gap: 15px;
+}
+
+.paranew{
+    font-size: 16px;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.link:hover{
+    color: #939393;
+}
+
+.contact_data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top_img{
+    display: flex;
+    align-items: flex-start;
+}
+
+.topimg{
+    position: relative;
+}
+
+.top_hover{
+    position: absolute;
+    top: 40px;
+    left: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hoverimg{
+    margin-left: -30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #root{
+        gap: 0;
+    }
+
+    body{
+        padding: 10px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    #workcard{
+        flex-direction: column;
+    }
+
+    .workcard_right_down{
+        gap: 15px;
+    }
+
+    .app{
+        width: 100%;
+    }
+
+    .workcard_left{
+        img{
+            width: 330px;
+        }
+    }
+}
+
+
+.image-stack {
+    position: relative;
+    height: 100px;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .first-image,
+  .second-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out; 
+  }
+
+  
+  .first-image {
+    z-index: 2; 
+  }
+  
+  .second-image {
+  z-index: 1; 
+  opacity: 0; 
+  margin-left: 70px; 
+}
+
+  
+  .image-container:hover .second-image {
+    opacity: 1; 
+  }
+
+  .third-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+    margin-left: 150px;
+  }
+  
+  .image-container:hover .third-image {
+    opacity: 1;
+  }
+  
+  
