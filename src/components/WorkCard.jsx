@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import ButtonNormal from "./ButtonNormal";
 
 function WorkCard(props){
 
+    const [isActive, setIsActive] = useState(false);
+
+    function handleTouchStart () {
+      setIsActive(true);
+    }
+  
+    function handleTouchEnd () {
+      setIsActive(false);
+    }
+
+    function handleMouseEnter(){
+        setIsActive(true);
+    }
+
+    function handleMouseLeave(){
+        setIsActive(false);
+    }
+
     return(
 
-        <div id="workcard">
+        <div className={ isActive ? "workcard_main" : "" } id="workcard" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} >
             <div className="workcard_left">
                 <img src={props.url} alt="nextrio" />
             </div>
@@ -21,7 +39,7 @@ function WorkCard(props){
 
                     <div><p>{props.paradown}</p></div>
                     
-                    <div><ButtonNormal /></div>
+                    <div><ButtonNormal link={props.link} text={props.text} hoverEffect={props.hoverEffect} /></div>
 
                 </div>
             </div>

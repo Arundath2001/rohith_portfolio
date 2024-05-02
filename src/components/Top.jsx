@@ -5,12 +5,6 @@ import image3 from "../assets/image3.png";
 
 function Top(){
 
-    const [hovered , setHovered] = useState(false);
-
-    function handleHover(){
-        setHovered(!hovered)
-    }
-
     return(
 
         <div id="top">
