@@ -6,6 +6,7 @@ import ServiceData from './ServiceData';
 import About from './About';
 import Contact from './Contact';
 import Navbar from './Navbar';
+import NewNavbar from './NewNavbar';
 
 function App() {
   
@@ -19,7 +20,12 @@ function App() {
             <Contact />
 
         </div>
-        <div className='nav'> <Navbar /> </div></>
+        <div className='nav'> 
+
+            <Navbar /> 
+            <NewNavbar />
+        
+        </div></>
 
     );
 
