@@ -15,7 +15,7 @@ function NewNavbar(){
         startAngle={90}
         rotationAngle={240}
         itemSize={2}
-        radius={3.2}
+        radius={3.5}
         rotationAngleInclusive={false}
       >
         <CircleMenuItem
