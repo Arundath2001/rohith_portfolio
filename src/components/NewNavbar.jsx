@@ -31,7 +31,7 @@ function NewNavbar(){
           <a href="#work"><WorkIcon /></a>
         </CircleMenuItem>
         <CircleMenuItem tooltip="Home" >
-          <a href='#top'><HomeIcon /></a>
+          <a href='#root'><HomeIcon /></a>
         </CircleMenuItem>
       </CircleMenu>
     </div>
