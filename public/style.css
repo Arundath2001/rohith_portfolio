@@ -104,7 +104,8 @@ h5{
     font-size: 16px;
     border: 0px;
     color: #FFFFFF;
-    transition: background-color .50s ease-in-out;
+    transition: transform .5s, background-color 1.3s, color 1.9s;
+
 }
 
 
@@ -331,7 +332,7 @@ html {
 .newnavbar{
     display: none;
     position: fixed;
-    bottom: 7%;
+    bottom: 8%;
     right: 5%;
 }
 
