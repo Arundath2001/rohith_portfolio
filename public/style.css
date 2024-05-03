@@ -367,6 +367,7 @@ a{
 
     #workcard{
         flex-direction: column;
+        align-items: center;
     }
 
     .workcard_right_down{
@@ -401,11 +402,15 @@ a{
     }
 
     p{
-        font-size: 13px;
+        font-size: 14.5px;
     }
 
     .newnavbar{
         display: block;
+    }
+
+    .alignpara{
+        text-align: justify;
     }
 }
 
@@ -450,11 +455,15 @@ a{
     }
 
     p{
-        font-size: 13px;
+        font-size: 14.5px;
     }
 
     .newnavbar{
         display: block;
+    }
+
+    .alignpara{
+        text-align: justify;
     }
 
 

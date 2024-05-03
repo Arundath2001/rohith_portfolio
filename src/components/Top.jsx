@@ -20,7 +20,7 @@ function Top(){
             <h2>Hey, <br />
             I’m Rohith Rameshan</h2>
 
-            <p>As an Associate UI/UX Designer, I bring a blend of creativity and technical expertise to the table. With a foundation built on understanding user needs and crafting seamless experiences, I thrive in collaborating with teams to bring digital visions to life. From wireframes to pixel-perfect designs, I am dedicated to refining user interfaces that delight and inspire.</p>
+            <p className="alignpara">As an Associate UI/UX Designer, I bring a blend of creativity and technical expertise to the table. With a foundation built on understanding user needs and crafting seamless experiences, I thrive in collaborating with teams to bring digital visions to life. From wireframes to pixel-perfect designs, I am dedicated to refining user interfaces that delight and inspire.</p>
 
         </div>
 
