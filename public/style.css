@@ -477,6 +477,15 @@ html {
 
 }
 
+@media screen and (max-width: 1440px) {
+#root{
+    gap: 90px;
+}
+.navbar{
+    overflow: auto;
+}
+}
+
 
 
   
