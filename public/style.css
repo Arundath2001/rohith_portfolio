@@ -483,6 +483,7 @@ html {
 }
 .navbar{
     overflow: auto;
+    top: 60%;
 }
 }
 
