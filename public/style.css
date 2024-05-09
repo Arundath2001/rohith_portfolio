@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: space-evenly;
 
 }
 
@@ -26,8 +27,6 @@ body{
     border-radius: 12px;
     background-color: #212121;
     padding: 20px;
-    margin: 0 12%;
-
     
 }
 
@@ -384,9 +383,7 @@ html {
 
     .app{
         width: 100%;
-        padding: 10px;
-        gap: 40px;
-        margin: 0 auto;
+        padding: 10px;gap: 40px;
     }
 
     .workcard_left{
@@ -444,9 +441,8 @@ html {
 
     .app{
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         gap: 40px;
-        margin: 0 auto;
     }
 
     h2{
@@ -480,12 +476,6 @@ html {
 
 }
 
-@media screen and (max-width: 1440px) {
-.navbar{
-    overflow: auto;
-    top: 55%;
-}
-}
 
 
 
