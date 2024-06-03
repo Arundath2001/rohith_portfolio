@@ -9,13 +9,14 @@
     margin: 0 200px;
 }
 
-body{
-    background: linear-gradient(rgba(255, 255, 255, 0.592), rgba(255, 255, 255, 0.614)), url("../src/assets/b2b.png") no-repeat center center;
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.592), rgba(255, 255, 255, 0.614)), url("/src/assets/bg.jpg") no-repeat center center;
     background-size: cover;
     font-family: "Inter", sans-serif;
     padding: 20px;
     background-attachment: fixed;
 }
+
 
 
 .app{
