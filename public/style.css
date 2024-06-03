@@ -226,12 +226,12 @@ a{
     display: flex;
     flex-direction: row;
     gap: 15px;
-}
 
-svg{
-    width: 23px;
-    height: 23px;
-    color: #5C8374;
+    svg{
+        width: 23px;
+        height: 23px;
+        color: #5C8374;
+    }
 }
 
 .contact{
