@@ -7,6 +7,7 @@ import About from './About';
 import Contact from './Contact';
 import Navbar from './Navbar';
 import NewNavbar from './NewNavbar';
+import Designprocess from './Designprocess';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
 
         <><div className='app'>
             <Top />
+            <Designprocess />
             <WorkData />
             <ServiceData />
             <About />

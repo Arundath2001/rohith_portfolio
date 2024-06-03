@@ -1,11 +1,12 @@
 import React from "react";
-import img1 from "../assets/img1.png"
+import img1 from "../assets/dribble.svg"
 import img2 from "../assets/img2.png"
 import insta from "../assets/insta.png"
 import ButtonIcon from "./ButtonIcon";
 import mail from "../assets/mail.png"
 import call from "../assets/call.png"
 import download from "../assets/download.png"
+import Buttonrow from "./Buttonrow";
 
 function ContactNew(props){
 
@@ -38,9 +39,7 @@ function ContactNew(props){
 
             <div className="contact_button">
 
-                <ButtonIcon img={img1} url="https://dribbble.com/rohit_h" />
-                <ButtonIcon img={img2} url="https://www.behance.net/rohithramesh7" />
-                <ButtonIcon img={insta} url="https://www.instagram.com/_.rohit_h._/" />
+                <Buttonrow />
 
             </div>
 
@@ -55,7 +54,7 @@ function ContactNew(props){
 
             </div>
 
-            <div onClick={downloadpdf} className="buttonicon">
+            <div onClick={downloadpdf} className="buttonicon button_shadow">
                 <a><img src={download} /> Resume</a>  
             </div>
 

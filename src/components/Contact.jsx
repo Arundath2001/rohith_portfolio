@@ -1,10 +1,7 @@
 import React from "react";
 import mail from "../assets/mail.png"
 import call from "../assets/call.png"
-import img1 from "../assets/img1.png"
-import img2 from "../assets/img2.png"
-import insta from "../assets/insta.png"
-import ButtonIcon from "./ButtonIcon";
+import Buttonrow from "./Buttonrow";
 
 function Contact(){
 
@@ -28,9 +25,7 @@ function Contact(){
 
             <div className="contact_button">
 
-                <ButtonIcon img={img1} url="https://dribbble.com/rohit_h" />
-                <ButtonIcon img={img2} url="https://www.behance.net/rohithramesh7" />
-                <ButtonIcon img={insta} url="https://www.instagram.com/_.rohit_h._/" />
+                <Buttonrow />
 
             </div>
 
