@@ -3,7 +3,7 @@ import mail from "../assets/mail.png"
 import call from "../assets/call.png"
 import download from "../assets/download.png"
 import Buttonrow from "./Buttonrow";
-import resumepdf from '../assets/RohithrameshanResume.pdf';
+import resumepdf from '../assets/Resume.pdf';
 
 
 function ContactNew(props){
