@@ -3,27 +3,10 @@ import mail from "../assets/mail.png"
 import call from "../assets/call.png"
 import download from "../assets/download.png"
 import Buttonrow from "./Buttonrow";
+import resumepdf from '../assets/RohithrameshanResume.pdf';
+
 
 function ContactNew(props){
-
-    function downloadpdf(){
-
-        var pdfPath = '../assets/RohithrameshanResume.pdf';
-            
-        var a = document.createElement('a');
-        
-        a.href = pdfPath;
-        
-        a.download = 'RohithrameshanResume.pdf';
-        
-        document.body.appendChild(a);
-        
-        a.click();
-        
-        document.body.removeChild(a);
-
-    }
-
 
     return(
 
@@ -50,8 +33,8 @@ function ContactNew(props){
 
             </div>
 
-            <div onClick={downloadpdf} className="buttonicon button_shadow">
-                <a><img src={download} /> Resume</a>  
+            <div  className="buttonicon button_shadow">
+                <a href={resumepdf} download="Rohith-Resume" ><img src={download} /> Resume</a>  
             </div>
 
             </div>
