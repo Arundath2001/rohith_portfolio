@@ -33,12 +33,13 @@ function ContactNew(props){
 
             </div>
 
+            <a href={resumepdf} download="Rohith-Resume" >
             <div  className="buttonicon button_shadow">
-                <a href={resumepdf} download="Rohith-Resume" ><img src={download} /> Resume</a>  
+                <a><img src={download} /> Resume  </a>
             </div>
-
+            </a>
             </div>
-
+            
             
 
         </div>
