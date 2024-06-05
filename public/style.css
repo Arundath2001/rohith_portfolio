@@ -232,7 +232,6 @@ a{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: center;
 
     svg{
         width: 23px;
