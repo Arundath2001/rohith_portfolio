@@ -231,7 +231,8 @@ a{
 .buttonrow{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
+    justify-content: center;
 
     svg{
         width: 23px;
