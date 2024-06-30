@@ -14,6 +14,7 @@ function ServiceData(){
             <ServiceCard head3="User Testing & Feedback" para="Conducting user tests to gather actionable insights and iterating designs based on feedback." />
             <ServiceCard head3="Logo Making" para="Crafting captivating logos that embody your brand's essence with creativity and precision." />
             <ServiceCard head3="UI/UX  Writing" para="Crafting compelling UI/UX designs to enhance user experiences and elevate digital interactions." />
+            <ServiceCard head3="Video Editor" para="Video editor skilled in Adobe Premiere Pro, DaVinci Resolve, and Capcut. I bring stories to life with creativity and precision, delivering engaging content across varios platform." />
 
         </div>
 

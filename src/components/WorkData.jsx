@@ -25,7 +25,7 @@ function WorkData(){
             <WorkCard link="https://www.behance.net/gallery/189443037/Case-Study-B2B-E-commerce-website" hoverEffect="hovereffect" text="Case Study" video={b2bv} url={b2b} head3="B2B E-commerce Website " paratop="[Study Based Innovations]" paradown="Elevate B2B transactions with our meticulously crafted ecommerce website design, tailored for seamless business-to-business interactions." />
             <WorkCard link="https://www.behance.net/gallery/191041807/Re-designed-Login-page-for-IRCTC-Rail-Connect-App" hoverEffect="hovereffect" text="Case Study" video={irctcv} url={irctc} head3="IRCTC Rail Connect Login Page " paratop="[Study Based Innovations]" paradown="Revolutionized the IRCTC Rail Connect app login page with a contemporary redesign, enhancing user experience and functionality." />
             <WorkCard  text="Unavailable" video={goodluckv} url={goodluck} head3="Good Luck" paratop="[Study Based Innovations]" paradown="Your’s ultimate giveaway companion app where users can effortlessly create, join, and select winners for exciting giveaways." />
-            <WorkCard  text="Unavailable" video={terra} url={terra} head3="Terra-One" paratop="[Company Project]" paradown="Your all-in-one warehouse management solution simplifies inventory tracking and logistics, ensuring smooth operations and optimal efficiency for your business." />
+            <WorkCard  text="Unavailable" url={terra} head3="Terra-One" paratop="[Company Project]" paradown="Your all-in-one warehouse management solution simplifies inventory tracking and logistics, ensuring smooth operations and optimal efficiency for your business." />
         </div>
 
     );
