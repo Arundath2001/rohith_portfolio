@@ -25,7 +25,12 @@ function WorkCard(props){
 
         <div className={ isActive ? "workcard_main" : "" } id="workcard" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} >
             <div className="workcard_left">
-                <img src={props.url} alt="nextrio" />
+                <img src={props.url} alt="nextrio" style={{  display : isActive && 'none' }} />
+                {isActive &&(
+                    <video autoPlay loop muted>
+                        <source src={props.video} />
+                    </video>
+                )}
             </div>
             <div className="workcard_right">
                 <div className="workcard_right_top">

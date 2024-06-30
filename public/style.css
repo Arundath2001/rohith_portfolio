@@ -305,7 +305,14 @@ html {
 
 .workcard_left{
     img{
-        height: 100%;
+        width: 464px;
+        height: 344px;
+    }
+
+    video{
+        width: 464px;
+        height: 344px;
+        object-fit: cover;
     }
 }
 
@@ -463,6 +470,10 @@ html {
 
     .workcard_left{
         img{
+            width: 100%;
+        }
+
+        video{
             width: 100%;
         }
     }
