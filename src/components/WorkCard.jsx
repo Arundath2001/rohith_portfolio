@@ -83,7 +83,9 @@ function WorkCard(props) {
         >
             <div className="workcard_left">
                 {isVideoVisible ? (
-                    <img src={props.webpImage || props.url} alt="thumbnail" />
+                    <video ref={videoRef} loop muted poster={props.url}>
+                        <source src={props.video} type="video/webm" />
+                    </video>
                 ) : (
                     <img src={props.url} alt="thumbnail" />
                 )}
