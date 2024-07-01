@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ButtonNormal from "./ButtonNormal";
 
 function WorkCard(props) {
     const [isActive, setIsActive] = useState(false);
+    const [isVideoVisible, setIsVideoVisible] = useState(false);
+    const videoRef = useRef(null);
+    const containerRef = useRef(null);
 
     function handleTouchStart() {
         setIsActive(true);
@@ -13,31 +16,78 @@ function WorkCard(props) {
     }
 
     function handleMouseEnter() {
-        setIsActive(true);
+        if (window.innerWidth > 600) {
+            setIsActive(true);
+            setIsVideoVisible(true);
+        }
     }
 
     function handleMouseLeave() {
-        setIsActive(false);
+        if (window.innerWidth > 600) {
+            setIsActive(false);
+            setIsVideoVisible(false);
+        }
     }
 
-    const showVideo = (isActive || window.innerWidth <= 600) && props.video;
+    useEffect(() => {
+        if (window.innerWidth <= 600) {
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setIsVideoVisible(true);
+                        } else {
+                            setIsVideoVisible(false);
+                        }
+                    });
+                },
+                {
+                    rootMargin: '0px 0px -20% 0px',
+                    threshold: 0.35 
+                }
+            );
+
+            if (containerRef.current) {
+                observer.observe(containerRef.current);
+            }
+
+            return () => {
+                if (containerRef.current) {
+                    observer.unobserve(containerRef.current);
+                }
+            };
+        }
+    }, []);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            if (isVideoVisible) {
+                videoRef.current.play().catch(error => {
+                    console.log('Error playing video:', error);
+                });
+            } else {
+                videoRef.current.pause();
+            }
+        }
+    }, [isVideoVisible]);
 
     return (
-        <div 
-            className={isActive ? "workcard_main" : ""} 
-            id="workcard" 
-            onMouseLeave={handleMouseLeave} 
-            onMouseEnter={handleMouseEnter} 
-            onTouchStart={handleTouchStart} 
+        <div
+            className={isActive ? "workcard_main" : ""}
+            id="workcard"
+            ref={containerRef}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
         >
             <div className="workcard_left">
-                {showVideo ? (
-                    <video autoPlay loop muted>
+                {isVideoVisible ? (
+                    <video ref={videoRef} loop muted poster={props.url}>
                         <source src={props.video} type="video/mp4" />
                     </video>
                 ) : (
-                    <img src={props.url} alt="nextrio" />
+                    <img src={props.url} alt="thumbnail" />
                 )}
             </div>
             <div className="workcard_right">
